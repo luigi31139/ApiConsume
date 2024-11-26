@@ -53,8 +53,9 @@ class _RecipeListState extends State<RecipeList> {
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(20),
-                          child: Image.network(
-                            recipes[index].image,
+                          child: FadeInImage.assetNetwork(
+                            placeholder: 'assets/food_icon.png',
+                            image: recipes[index].image,
                             width: 130,
                             height: 100,
                             fit: BoxFit.cover,
