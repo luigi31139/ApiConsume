@@ -36,6 +36,9 @@ class _RecipeListState extends State<RecipeList> {
              
             itemCount: recipes.length,
             itemBuilder: (context, index) {
+              
+              
+              
               return GestureDetector(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => RecipeDetails(recipe: [recipes[index]],)));
@@ -72,6 +75,12 @@ class _RecipeListState extends State<RecipeList> {
               );
             },
            );
+
+
+
+
+
+
         },
       )
     );
